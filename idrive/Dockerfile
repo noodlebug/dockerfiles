@@ -26,4 +26,4 @@ RUN export IDRIVE_USER="idrive" \
 
 EXPOSE 5001
 VOLUME ["/etc/idrive", "/home/idrive/.idrive", "/data"]
-CMD ["bash", "idrive_admin.py", "start"]
+ENTRYPOINT ["python", "idrive_admin.py", "start"]
